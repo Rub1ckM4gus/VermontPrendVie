@@ -1,5 +1,8 @@
 body{
-    background-color: beige;
+    background-image: url(images/backgroundParchemin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f0e6d6;
 }
 
 header{
