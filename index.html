@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SombreArgent Par Alexis David</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header>
-        <h1>Vermont Prend Vie</h1>
-        <h2>par Alexis David</h2>
+        <div class="ConteneurTitre">
+            <h1>Sombre Argent</h1>
+            <h2>par Alexis David</h2>
+        </div>
+        
         <nav>
             <a href="#section1">Projet Recherche</a>
             <a href="#section2">References Conceptuelles</a>
             <a href="#section3">Scénarisation</a>
-            <a href="#section4">Court Métrage</a>
+            <a href="#section4">Programmation</a>
+            <a href="#section5">Court Métrage</a>
         </nav>
     </header>
 
@@ -23,15 +28,15 @@
 
         <section id="section1" class="ProjetRecherche">
             <div class="texteRecherche">
+                <h1>Projet de Recherche</h1>
                 <!-- texte de présentation quel étais le but du projet de recherche, attentes etc. -->
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad totam omnis nam sunt minima, 
-                facere facilis quae officiis quo, nisi provident sed id aut temporibus, consequuntur culpa?
-                A, praesentium laudantium.
+                L'animation
             </div>
         </section>
 
         <section id="section2" class="References">
             <div class="texteReference">
+                <h1>Références Artistiques</h1>
                 <!-- Mood board légèrement interactif (css hover) ou non. Références & prototypes -->
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad totam omnis nam sunt minima, 
                 facere facilis quae officiis quo, nisi provident sed id aut temporibus, consequuntur culpa?
@@ -40,7 +45,7 @@
         </section>
 
         <section id="section3" class="conteneurStoryBoard">
-            <h1>Panneaux Storyboard</h1>
+            <h1>Scénarisation & Scénarimage</h1>
             <p>
                 <!-- Explication changements scénario qui sont arrivé -->
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum fugiat ipsam totam quisquam animi
@@ -51,19 +56,25 @@
                 <div class="imgWrapper">
                     <ul class="listeStoryboard">
                         <li class="Planche1">
-                            <img src="images/storyboard1.png" alt="Numéro 1">
-                            <!-- texte contextuel possible sur planche storyboard -->
-                            <p>BlaBlaBla</p>
+                            <div class="conteneurItems">
+                                <img src="images/storyboard1.png" alt="Numéro 1">
+                                <!-- texte contextuel possible sur planche storyboard -->
+                                <p>BlaBlaBla</p>
+                            </div>
                         </li>
                         <li class="Planche2">
-                            <img src="images/storyboard2.png" alt="Numéro 2">
-                            <!-- texte contextuel possible sur planche storyboard -->
-                            <p>BlaBlaBla</p>
+                            <div class="conteneurItems">
+                                <img src="images/storyboard2.png" alt="Numéro 2">
+                                <!-- texte contextuel possible sur planche storyboard -->
+                                <p>BlaBlaBla</p>
+                            </div>
                         </li>
                         <li class="Planche3">
-                            <img src="images/storyboard3.png" alt="Numéro 3">
-                            <!-- texte contextuel possible sur planche storyboard -->
-                            <p>BlaBlaBla</p>
+                            <div class="conteneurItems">
+                                <img src="images/storyboard3.png" alt="Numéro 3">
+                                <!-- texte contextuel possible sur planche storyboard -->
+                                <p>BlaBlaBla</p>
+                            </div>
                         </li>
                     </ul>
                 </div>  
@@ -71,10 +82,13 @@
             
         </section>
 
-        <section id="section4" class="conteneurCourtMetrage">
-            <h1>Vidéo: Sombre Argent</h1>
-            courament un placeholder
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <section id="section4"></section>
+
+        <section id="section5" class="conteneurCourtMetrage">
+            <h1>Produit Final</h1>
+            <p>Une Fois les animations terminées et rendered comme séquences d'images</p>
+            <video src="images/SombreArgent.mp4" controls></video>
+            <!--<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>-->
         </section>
 
     </main>
@@ -83,6 +97,8 @@
     </footer>
 </body>
 
-<!-- Lien du fichier script.json -->
+<!-- Lien de mon fichier Javascript -->
 <script src="script.js"></script>
+<!-- Lien du script de SwiperJS  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </html>
