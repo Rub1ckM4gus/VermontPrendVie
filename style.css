@@ -52,6 +52,6 @@ section{
     width: 100%;
 }
 
-.conteneurCourtMetrage {
-    width: 100vh;
+.conteneurCourtMetrage video{
+    width: 100%;
 }
