@@ -1,6 +1,11 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
-    background-color: #f0e6d6;
+    background-color: #797878;
 }
 
 header{
@@ -21,11 +26,11 @@ header nav{
 }
 
 header nav a{
-    
     text-decoration: none;
     color: white;
     border: 2px solid darkslategray;
     padding: 12px;
+    border-radius: 3px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -37,19 +42,46 @@ section{
     text-align: center;
 }
 
+.listeStoryboard{
+    padding: 0;
+}
+
+.swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    background: aqua;
+}
+
+.swiper-button-prev {
+    scale: 2;
+    color: aqua;
+    padding-left: 2rem;
+}
+
+.swiper-button-next{
+    scale: 2;
+    color: aqua;
+    padding-right: 2rem;
+}
+
 .listeStoryboard li{
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 
 .listeStoryboard li .conteneurItems{
-    width: 900px;
-    padding: 20px;
+    user-select: none;
+    width: auto;
+    padding: 50px 60px 0px 60px;
     background-color: black;
     color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .listeStoryboard .conteneurItems img{
-    width: 100%;
+    width: 70%;
 }
 
 .conteneurCourtMetrage video{

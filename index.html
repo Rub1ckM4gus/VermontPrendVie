@@ -52,24 +52,24 @@
                 architecto minima asperiores omnis, provident, nostrum laborum natus esse sunt, aperiam mollitia cumque quasi.
                 Assumenda, adipisci?
             </p>
-            <div class="carrouselStoryboard">
-                <div class="imgWrapper">
-                    <ul class="listeStoryboard">
-                        <li class="Planche1">
+            <div class="carrouselStoryboard swiper">
+                <div class="img-wrapper">
+                    <ul class="listeStoryboard swiper-wrapper">
+                        <li class="Planche1 swiper-slide">
                             <div class="conteneurItems">
                                 <img src="images/storyboard1.png" alt="Numéro 1">
                                 <!-- texte contextuel possible sur planche storyboard -->
                                 <p>BlaBlaBla</p>
                             </div>
                         </li>
-                        <li class="Planche2">
+                        <li class="Planche2 swiper-slide">
                             <div class="conteneurItems">
                                 <img src="images/storyboard2.png" alt="Numéro 2">
                                 <!-- texte contextuel possible sur planche storyboard -->
                                 <p>BlaBlaBla</p>
                             </div>
                         </li>
-                        <li class="Planche3">
+                        <li class="Planche3 swiper-slide">
                             <div class="conteneurItems">
                                 <img src="images/storyboard3.png" alt="Numéro 3">
                                 <!-- texte contextuel possible sur planche storyboard -->
@@ -77,9 +77,14 @@
                             </div>
                         </li>
                     </ul>
-                </div>  
+                    <!-- elements swiper pour bouttons circulation -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> 
+
+                 
             </div>
-            
         </section>
 
         <section id="section4">
@@ -103,8 +108,8 @@
     </footer>
 </body>
 
-<!-- Lien de mon fichier Javascript -->
-<script src="script.js"></script>
 <!-- Lien du script de SwiperJS  -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<!-- Lien de mon fichier Javascript -->
+<script src="script.js"></script>
 </html>

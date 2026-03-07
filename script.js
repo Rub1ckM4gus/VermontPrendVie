@@ -12,3 +12,19 @@ function scrollControl() {
     }
     scrollControl();
 }
+
+new Swiper('.img-wrapper', {
+  loop: true,
+
+  // Pagination des points
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true
+  },
+
+  // Flêches Navigation
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
