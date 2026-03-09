@@ -59,12 +59,36 @@ section{
     text-align: center;
 }
 
-.conteneurProjetRecherche, .conteneurReferences, .conteneurProgrammation{
+.conteneurProjetRecherche, .conteneurProgrammation{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-bottom: 4rem;
+}
+
+.conteneurReferences{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 4rem;
+}
+
+.imagesSuppG, .imagesSuppD{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    height: 600px;
+    padding: 0px 40px 0px 40px;
+    background-color: black;
+}
+
+.conteneurReferences img{
+    border: 5px groove rgb(202, 202, 202);
+    width: 400px;
+    height: 220px;
 }
 
 .conteneurProgrammation{
