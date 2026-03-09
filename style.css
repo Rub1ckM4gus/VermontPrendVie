@@ -59,15 +59,7 @@ section{
     text-align: center;
 }
 
-.conteneurProjetRecherche, .conteneurProgrammation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 4rem;
-}
-
-.conteneurReferences{
+.conteneurProjetRecherche, .conteneurReferences, .conteneurProgrammation{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -75,7 +67,7 @@ section{
     padding-bottom: 4rem;
 }
 
-.imagesSuppG, .imagesSuppD{
+.imagesAnimG, .imagesAnimD, .imagesSuppG, .imagesSuppD{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -86,15 +78,15 @@ section{
     z-index: -1;
 }
 
-.imagesSuppD{
+.imagesAnimG, .imagesSuppG{
     opacity: 0;
-    translate: -350px;
+    translate: 350px;
     transition: opacity .5s, translate .5s;
 }
 
-.imagesSuppG{
+.imagesAnimD, .imagesSuppD{
     opacity: 0;
-    translate: 350px;
+    translate: -350px;
     transition: opacity .5s, translate .5s;
 }
 
@@ -103,17 +95,17 @@ section{
     translate: 0;
 }
 
-.conteneurReferences img{
+.conteneurProjetRecherche img, .conteneurReferences img{
     border: 5px groove rgb(202, 202, 202);
     width: 400px;
     height: 220px;
 }
 
-.conteneurReferences .texteReference #visionnementID{
+#animationID, #visionnementID{
     display: none;
 }
 
-.conteneurReferences .texteReference label{
+.conteneurProjetRecherche .texteRecherche label, .conteneurReferences .texteReference label{
     align-self: center;
     padding: 1rem;
     width: fit-content;
@@ -124,14 +116,14 @@ section{
     transition: background-color ease 0.5s, color ease 0.5s;
 }
 
-.conteneurReferences .texteReference label:hover{
+.conteneurProjetRecherche .texteRecherche label:hover, .conteneurReferences .texteReference label:hover{
     background-color: rgb(202, 202, 202);
     color: black;
     font-weight: bolder;
     transition: ease 0.5s;
 }
 
-.conteneurReferences .texteReference #visionnementID:checked + label{
+#animationID:checked + label, #visionnementID:checked + label{
     background-color: rgb(202, 202, 202);
     color: black;
     font-weight: bolder;
@@ -160,7 +152,7 @@ section{
 }
 
 .texteProgrammation{
-    height: 1000px;
+    height: 800px;
 }
 
 .conteneurStoryBoard, .conteneurCourtMetrage{
@@ -214,6 +206,17 @@ section{
     width: 70%;
 }
 
+.conteneurCourtMetrage{
+    height: fit-content;
+    padding-bottom: 2rem;
+}
+
+.conteneurCourtMetrage p{
+    padding: 0px 4rem 0px 4rem;
+}
+
 .conteneurCourtMetrage video{
-    width: 100%;
+    margin-top: 2rem;
+    border: 5px groove rgb(202, 202, 202);
+    width: 1000px;
 }

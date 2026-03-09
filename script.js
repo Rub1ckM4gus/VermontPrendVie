@@ -13,6 +13,7 @@ function scrollControl() {
     scrollControl();
 }
 
+// intégration Swiper Javascript
 new Swiper('.img-wrapper', {
   loop: true,
 
@@ -29,6 +30,16 @@ new Swiper('.img-wrapper', {
   },
 });
 
+//gestion des checkbox et leur application classe CSS
+const checkboxRecherche = document.getElementById("animationID");
+const animationG = document.querySelector(".imagesAnimG");
+const animationD = document.querySelector(".imagesAnimD");
+
+checkboxRecherche.addEventListener('change', function() {
+    animationG.classList.toggle('visible', this.checked);
+    animationD.classList.toggle('visible', this.checked);
+});
+
 const checkboxReferences = document.getElementById("visionnementID");
 const galerieG = document.querySelector(".imagesSuppG");
 const galerieD = document.querySelector(".imagesSuppD");
@@ -37,3 +48,4 @@ checkboxReferences.addEventListener('change', function() {
     galerieG.classList.toggle('visible', this.checked);
     galerieD.classList.toggle('visible', this.checked);
 });
+
