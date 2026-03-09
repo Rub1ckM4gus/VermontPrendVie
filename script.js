@@ -28,3 +28,12 @@ new Swiper('.img-wrapper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const checkbox = document.getElementById("visionnementID");
+const galerieG = document.querySelector(".imagesSuppG");
+const galerieD = document.querySelector(".imagesSuppD");
+
+checkbox.addEventListener('change', function() {
+    galerieG.classList.toggle('visible', this.checked);
+    galerieD.classList.toggle('visible', this.checked);
+});
