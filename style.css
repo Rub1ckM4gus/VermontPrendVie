@@ -42,6 +42,13 @@ header nav a{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+header nav a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(202, 202, 202);
+    transition: all 0.4s;
+}
+
 header h1, header h2{
     margin: 0;
 }
