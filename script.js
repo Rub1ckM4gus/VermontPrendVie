@@ -49,3 +49,11 @@ checkboxReferences.addEventListener('change', function() {
     galerieD.classList.toggle('visible', this.checked);
 });
 
+const checkboxProgrammation = document.getElementById("programmationID");
+const programmationG = document.querySelector(".imagesProgG");
+const programmationD = document.querySelector(".imagesProgD");
+
+checkboxProgrammation.addEventListener('change', function() {
+    programmationG.classList.toggle('visible', this.checked);
+    programmationD.classList.toggle('visible', this.checked);
+});
