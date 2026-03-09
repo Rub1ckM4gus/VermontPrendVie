@@ -29,11 +29,11 @@ new Swiper('.img-wrapper', {
   },
 });
 
-const checkbox = document.getElementById("visionnementID");
+const checkboxReferences = document.getElementById("visionnementID");
 const galerieG = document.querySelector(".imagesSuppG");
 const galerieD = document.querySelector(".imagesSuppD");
 
-checkbox.addEventListener('change', function() {
+checkboxReferences.addEventListener('change', function() {
     galerieG.classList.toggle('visible', this.checked);
     galerieD.classList.toggle('visible', this.checked);
 });
